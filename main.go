@@ -1,4 +1,4 @@
-package workers // import "github.com/kihamo/go-workers"
+package workers // import "github.com/mrsmtvd/go-workers"
 
 //go:generate goimports -w ./
 //go:generate enumer -type=DispatcherStatus -trimprefix=DispatcherStatus -output dispatcher_status_enumer.go

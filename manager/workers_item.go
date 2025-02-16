@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/kihamo/go-workers"
+	"github.com/mrsmtvd/go-workers"
 )
 
 type WorkersManagerItem struct {

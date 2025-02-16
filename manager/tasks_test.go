@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/kihamo/go-workers"
-	"github.com/kihamo/go-workers/task"
+	"github.com/mrsmtvd/go-workers"
+	"github.com/mrsmtvd/go-workers/task"
 	"github.com/stretchr/testify/assert"
 )
 

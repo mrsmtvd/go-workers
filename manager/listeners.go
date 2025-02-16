@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kihamo/go-workers"
+	"github.com/mrsmtvd/go-workers"
 )
 
 type ListenersManager struct {

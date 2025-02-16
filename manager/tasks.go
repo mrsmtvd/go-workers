@@ -7,7 +7,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/kihamo/go-workers"
+	"github.com/mrsmtvd/go-workers"
 )
 
 type TasksManager struct {

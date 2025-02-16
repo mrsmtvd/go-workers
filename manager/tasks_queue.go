@@ -70,7 +70,7 @@ func (q *tasksQueue) Pop() interface{} {
 	}
 
 	defer func() {
-		for n < len(q.list) {
+		for n < len(q.list)-1 {
 			n++
 			q.list[n].setIndex(n)
 		}

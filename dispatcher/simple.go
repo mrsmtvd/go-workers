@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kihamo/go-workers"
-	"github.com/kihamo/go-workers/manager"
+	"github.com/mrsmtvd/go-workers"
+	"github.com/mrsmtvd/go-workers/manager"
 )
 
 type SimpleDispatcherResult struct {

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/kihamo/go-workers"
+	"github.com/mrsmtvd/go-workers"
 	"github.com/pborman/uuid"
 )
 

@@ -3,7 +3,7 @@ package task
 import (
 	"context"
 
-	"github.com/kihamo/go-workers"
+	"github.com/mrsmtvd/go-workers"
 )
 
 type FunctionTask struct {

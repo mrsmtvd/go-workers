@@ -7,7 +7,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/kihamo/go-workers"
+	"github.com/mrsmtvd/go-workers"
 )
 
 type TasksManagerItem struct {

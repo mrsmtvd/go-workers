@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/kihamo/go-workers"
+	"github.com/mrsmtvd/go-workers"
 )
 
 type FunctionListener struct {

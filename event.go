@@ -3,7 +3,7 @@ package workers
 import (
 	"fmt"
 
-	"github.com/kihamo/go-workers/event"
+	"github.com/mrsmtvd/go-workers/event"
 )
 
 var (
