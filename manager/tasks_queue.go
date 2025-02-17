@@ -26,6 +26,10 @@ func (q *tasksQueue) Less(i, j int) bool {
 	q.mutex.Lock()
 	defer q.mutex.Unlock()
 
+	if i >= len(q.list) || j >= len(q.list) {
+		return false
+	}
+
 	if q.list[i].IsWait() != q.list[j].IsWait() {
 		return q.list[i].IsWait()
 	}
