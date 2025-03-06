@@ -23,8 +23,8 @@ func (q *tasksQueue) Len() int {
 }
 
 func (q *tasksQueue) Less(i, j int) bool {
-	q.mutex.Lock()
-	defer q.mutex.Unlock()
+	q.mutex.RLock()
+	defer q.mutex.RUnlock()
 
 	if i >= len(q.list) || j >= len(q.list) {
 		return false
