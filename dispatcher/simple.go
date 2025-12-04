@@ -309,6 +309,10 @@ func (d *SimpleDispatcher) doExecuteTasks() {
 		if pullWorker != nil && pullTask != nil {
 			castWorker := pullWorker.(*manager.WorkersManagerItem)
 			castTask := pullTask.(*manager.TasksManagerItem)
+			if castTask.IsStatus(workers.TaskStatusCancel) {
+				d.listeners.AsyncTrigger(d.Context(), workers.EventTaskRemove, castTask.Task(), castTask.Metadata())
+				return
+			}
 
 			d.listeners.AsyncTrigger(d.Context(), workers.EventTaskExecuteStart, castTask.Task(), castTask.Metadata(), castWorker.Worker(), castWorker.Metadata())
 			go d.doRunTask(castWorker, castTask)
